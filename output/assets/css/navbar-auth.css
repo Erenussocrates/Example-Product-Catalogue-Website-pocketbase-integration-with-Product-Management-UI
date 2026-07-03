@@ -1,0 +1,151 @@
+.navbar-search-auth {
+  display: flex !important;
+  flex-direction: row !important; /* Forces items side-by-side */
+  align-items: center !important;  /* Center things vertically */
+  gap: 1.5rem !important;          /* Precise gaps between elements */
+  flex-wrap: nowrap !important;
+}
+
+.navbar-dropdown {
+  padding-top: 1.5rem !important;  /* Increases top inner spacing */
+  padding-bottom: 1.5rem !important; /* Increases bottom inner spacing */
+}
+
+.navbar-user-area {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.navbar-welcome-text {
+  font-size: 0.8rem;
+}
+
+.navbar-logout-btn {
+  font-size: 0.7rem;
+  text-decoration: underline;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar-logout-btn:hover {
+  opacity: 0.75;
+}
+
+#login-error-alert {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+}
+
+.navbar-search-btn {
+  white-space: nowrap !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px !important;
+  padding: 6px 16px !important;
+  white-space: nowrap !important;
+  font-size: 0.9rem !important;
+}
+
+.navbar-whatsapp-widget {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  text-align: center;
+  min-width: 140px;  
+  max-width: 180px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-whatsapp-icon {
+  height: 2.8rem !important;
+  width: auto !important;
+  display: block !important;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.navbar-whatsapp-icon:hover {
+  transform: scale(1.1); 
+}
+
+.navbar-whatsapp-text {
+  font-size: 0.75rem !important;
+  line-height: 1.2 !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin-top: 0px !important;
+}
+
+/* assets/css/navbar-auth.css - GLOBAL OVERRIDES FOR UNIFORMITY */
+
+/* Forces the links inside the menu list dropdown grid to maintain a standard size */
+.navbar-dropdown .navbar-nav .nav-link {
+  font-size: 1rem !important; 
+  line-height: 1.2 !important;
+  font-weight: 400 !important;
+}
+
+/* Fixes the "Kimyanın Amazonu" branding logo text scale */
+.navbar-dropdown .navbar-caption {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+
+/* Fixes input fields and search bar button elements text scaling */
+#navbar-search-form input,
+#navbar-search-form button {
+  font-size: 0.9rem !important;
+}
+
+/* Fixes the Welcome Message user area greeting row text scale */
+#navbar-welcome-text {
+  font-size: 0.75rem !important;
+}
+
+#navbar-logout-btn {
+  font-size: 0.7rem !important;
+}
+
+/* Ensure the layout wraps clean if screens are tight */
+.custom-detail-page .navbar-search-auth {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+}
+
+/* assets/css/navbar-auth.css - ABSOLUTE ALIGNMENT FIXES */
+
+/* Forces the absolute container area to stay uniform on all subpages */
+#navbar-auth-area {
+  display: block !important;
+  width: auto !important;
+  max-width: none !important;
+  flex: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Enforces exact form widths so input lengths never break formatting */
+#navbar-search-form {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#navbar-search-form input[type="search"] {
+  width: 180px !important; /* Exact input width constraint across pages */
+  height: 38px !important;
+  font-size: 0.9rem !important;
+  padding: 6px 12px !important;
+  border-radius: 4px !important;
+}

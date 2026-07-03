@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/navbar-auth.css">
+  <link rel="stylesheet" href="assets/css/products.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <title>Ürün Detayı</title>
+  <!--<link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css"> -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="assets/dropdown/css/style.css"> -->
+  <!--<link rel="stylesheet" href="assets/theme/css/style.css"> -->
+</head>
+<!-- ADDED: "custom-detail-page" class to target layout behaviors safely -->
+<body class="custom-detail-page">
+
+  <!-- Shared Navbar Element Mounting Node Point -->
+  <div id="navbar-mount"></div>
+
+  <!-- MODIFIED: Changed inline styles to a clean 10rem top padding block to stop header overlap -->
+  <section class="container" style="padding-top: 10rem !important; padding-bottom: 5rem !important;">
+    
+    <!-- State Box Alerts Handling Panel Indicators -->
+    <div id="detail-loading" class="text-center py-5">
+        <div class="spinner-border text-dark" role="status"></div>
+        <p class="mt-2 text-muted">Ürün bilgileri yükleniyor...</p>
+    </div>
+    <div id="detail-error" class="alert alert-danger d-none my-5" role="alert"></div>
+
+    <!-- Main Content Presentation Wrapper Grid Container -->
+    <div id="detail-content" class="d-none">
+      
+      <!-- Top Section Layer: Row Split Vertically in Two Columns -->
+      <div class="row g-5 align-items-center mb-5">
+        
+        <!-- Left half part -->
+        <div class="col-12 col-md-6">
+          <div class="p-3 bg-light rounded text-center d-flex align-items-center justify-content-center" style="min-height: 400px; max-height: 500px; overflow: hidden; border: 1px solid #eee;">
+            <img id="detail-image" src="" alt="" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+          </div>
+        </div>
+
+        <!-- Right half part -->
+        <div class="col-12 col-md-6">
+          <h1 id="detail-title" class="display-5 mb-3" style="font-weight: 700; color: #111;"></h1>
+          <h3 id="detail-price" class="text-primary mb-4" style="font-weight: 600;"></h3>
+          <hr>
+          <div class="mt-4">
+            <a id="detail-whatsapp-btn" href="#" target="_blank" class="btn btn-success px-4 py-2 d-inline-flex align-items-center gap-2" style="border-radius: 4px; font-weight: 600; text-decoration: none;">
+              <img src="assets/images/whatsapp icon.png" alt="WA" style="height: 1.5rem; width: auto;">
+              Bu Ürün İçin Sipariş Ver
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section Layer -->
+      <div class="row">
+        <div class="col-12">
+          <div class="p-4 rounded" style="background-color: #fafafa; border-left: 4px solid #ccc;">
+            <h4 class="h5 text-uppercase text-muted mb-3" style="letter-spacing: 1px; font-weight: 700; font-size: 0.85rem;">Ürün Açıklaması</h4>
+            <p id="detail-description" class="lead text-secondary mb-0" style="line-height: 1.6; font-size: 1.05rem; white-space: pre-line;"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/js/pocketbase.umd.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/product-detail.js"></script>
+
+</body>
+</html>

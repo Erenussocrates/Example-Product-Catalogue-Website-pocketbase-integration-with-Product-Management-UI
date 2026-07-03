@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/navbar-auth.css">
+  <link rel="stylesheet" href="assets/css/products.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <title>Tüm Ürünler</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=dNKrDU">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=dNKrDU" type="text/css">
+</head>
+<body>
+
+  <!-- Dynamic Shared Navbar Target Mounting Node Point -->
+  <div id="navbar-mount"></div>
+
+  <!-- Unified Product Grid Display Section Area -->
+  <section class="container py-5" id="products-section" style="padding-top: 8rem !important; padding-bottom: 5rem !important;">
+    <div class="mbr-section-head mb-4">
+      <h1 class="mbr-section-title display-5"><strong>Tüm Ürünler</strong></h1>
+    </div>
+
+    <!-- Status Alerts Handling Indicators Panel -->
+    <div id="products-loading" class="text-muted mb-3">Ürünler yükleniyor...</div>
+    <div id="products-error" class="alert alert-danger d-none" role="alert"></div>
+
+    <!-- Dynamic Target Element Where Catalog Cards Render -->
+    <div id="products-grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+      <!-- Cards injected automatically by assets/js/products.js -->
+    </div>
+  </section>
+
+  <!-- Core Component Javascript Library File Enpoint Scripts -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  <!-- Global Application Shared Setup Resource Linking Modules -->
+  <script src="assets/js/pocketbase.umd.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/products.js"></script>
+
+</body>
+</html>

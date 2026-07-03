@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.1.12, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>urun-girisi</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar-auth.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=zPocga"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=zPocga" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+
+  <div id="navbar-mount"></div>
+
+<!-- urun-girisi.html (Form Section Only) -->
+<section data-bs-version="5.1" class="form5 cid-sFzDs3t9EG" id="form5-1m">
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Yeni Ürün Girişi</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7">Sisteme yeni ürün kaydetmek için aşağıdaki formu doldurun.</h4>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form">
+                
+                <!-- REMOVED Mobirise defaults, ADDED clear id -->
+                <form id="product-entry-form" class="mbr-form form-with-styler">
+                    <div class="row">
+                        <!-- Custom Success and Error alert elements managed via Javascript -->
+                        <div id="entry-success-alert" class="alert alert-success col-12 d-none">Ürün başarıyla kaydedilmiştir!</div>
+                        <div id="entry-error-alert" class="alert alert-danger col-12 d-none">Bir sorun oluştu!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <!-- Ürün İsmi Field -->
+                        <div class="col-md col-sm-12 form-group mb-3">
+                            <input type="text" placeholder="Ürün ismi" class="form-control" value="" id="product-name" required>
+                        </div>
+                        
+                        <!-- Birim Fiyat Field -->
+                        <div class="col-12 form-group mb-3">
+                            <input type="number" step="0.01" placeholder="Birim fiyat (₺)" class="form-control" value="" id="product-price" required>
+                        </div>
+                        
+                        <!-- Açıklama Field -->
+                        <div class="col-12 form-group mb-3">
+                            <textarea placeholder="Açıklama" class="form-control" id="product-desc"></textarea>
+                        </div>
+
+                        <!-- NEW: Hidden Native File Input Layer -->
+                        <input type="file" id="product-image-file" accept="image/*" class="d-none">
+                        
+                        <!-- NEW: Selected File Name Text Feedback Indicator -->
+                        <div id="file-name-indicator" class="col-12 text-center text-muted mb-3 small d-none">
+                            Seçilen Dosya: <span id="file-name-text" style="font-weight: 600;"></span>
+                        </div>
+
+                        <!-- Form Buttons -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn d-flex justify-content-center gap-2">
+                            <button type="button" id="btn-add-image" class="btn btn-secondary-outline display-4">Resim ekle</button>
+                            <button type="submit" id="btn-submit-product" class="btn btn-info display-4">Ürünü yarat</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Include script dependency definitions -->
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
+<script src="assets/smoothscroll/smooth-scroll.js"></script>  
+<script src="assets/ytplayer/index.js"></script>  
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>  
+<script src="assets/theme/js/script.js"></script>  
+<script src="assets/js/pocketbase.umd.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/auth.js"></script>  
+<!-- NEW: Link to our new business logic controller script -->
+<script src="assets/js/product-entry.js"></script>  
+  
+  
+  
+</body>
+</html>
