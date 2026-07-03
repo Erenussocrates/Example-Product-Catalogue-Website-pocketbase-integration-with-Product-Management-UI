@@ -1,0 +1,27 @@
+/// <reference path="../pb_data/types.d.ts" />
+migrate((app) => {
+  const collection = app.findCollectionByNameOrId("pbc_4177699307")
+
+  // remove field
+  collection.fields.removeById("date2862495610")
+
+  return app.save(collection)
+}, (app) => {
+  const collection = app.findCollectionByNameOrId("pbc_4177699307")
+
+  // add field
+  collection.fields.addAt(4, new Field({
+    "help": "",
+    "hidden": false,
+    "id": "date2862495610",
+    "max": "",
+    "min": "",
+    "name": "gecerlilik_suresi",
+    "presentable": false,
+    "required": false,
+    "system": false,
+    "type": "date"
+  }))
+
+  return app.save(collection)
+})
